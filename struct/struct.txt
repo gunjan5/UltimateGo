@@ -1,0 +1,40 @@
+//in struct order matters
+
+type example struct{
+	flag bool  //bool takes 7bits, but it will have to 
+	counter int16
+	pi float64
+}
+
+
+//anonymous struct type:
+
+e:=struct {
+	flag bool
+	counter int12
+	pi float64
+} {
+	flag: true,
+	counter: 10,
+	pi: 3.1415928,
+}
+
+type bill struct {
+	flag bool
+	counter int12
+	pi float64
+} 
+
+type lisa struct {
+	flag bool
+	counter int12
+	pi float64
+} 
+
+var b bill
+var l lisa
+
+b=l //compile error
+b=e //no error 
+b=bill(l) //no error
+
