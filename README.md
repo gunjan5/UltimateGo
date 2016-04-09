@@ -58,7 +58,7 @@ u, err := retrieveUser("sally")
 
 - string chars have 3 things 1. char 2. codepoint 3. bytes
 - English (ASCII) chars have 1/1/1, but other chars such as Chinese chars 世 have 1/1/3 
-
+-------------
 - When you take a slice out of a slice `slice2 := slice1[2:4]` and don't want `slice2 = append(slice2, "CHANGED")` to affect `slice1`, then use `slice2 := slice1[2:4:4]` which is start from index 2, upto 4 (not included), len=2, cap=2, so when you append, it creates a new backing array! 
 
 
