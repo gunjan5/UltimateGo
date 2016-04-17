@@ -56,7 +56,7 @@ u, err := retrieveUser("sally")
 - Every string has a backing array for the data and header with a pointer to the data and length
 - Whenever you pass a string, it's actually just copying the header (need to confirm this)
 
-- string chars have 3 things 1. char 2. codepoint 3. bytes
+- string chars have 3 things 1. char 2. codepoint(aka `rune`) 3. bytes
 - English (ASCII) chars have 1/1/1, but other chars such as Chinese chars 世 have 1/1/3 
 
 
