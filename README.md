@@ -1,7 +1,7 @@
 # UltimateGo
 Hardcore Go training (Ardan Labs)
 
-##Tips:
+## Tips:
 
 - Every decision has a cost 
 - 10 lines of code = 1 bug
